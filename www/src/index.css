@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400..800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply font-baloo;
+}
+
+#root {
+  @apply flex min-h-svh flex-col gap-5 p-6;
+}
+
+.form {
+  @apply flex w-96 flex-col gap-6 rounded-xl border border-border bg-backgroundSecondary p-6;
+}
+
+.title {
+  @apply text-3xl font-bold;
+}
+
+*::-webkit-scrollbar {
+  @apply h-4 w-4;
+}
+
+*::-webkit-scrollbar-track {
+  @apply rounded-lg;
+}
+
+*::-webkit-scrollbar-thumb {
+  @apply h-14 rounded-lg border-4 border-solid border-transparent bg-gray-8 bg-clip-content;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  @apply bg-gray-9;
+}
+
+*::-webkit-scrollbar-corner {
+  @apply hidden;
+}
